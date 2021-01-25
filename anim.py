@@ -438,10 +438,6 @@ def do_video(config: List[Dict]):
                     bench.shake_effect = False
                 textbox.shake_effect = False
             elif "action" in obj and obj["action"] == Action.OBJECTION:
-                #                 bg.shake_effect = True
-                #                 character.shake_effect = True
-                #                 if bench is not None:
-                #                     bench.shake_effect = True
                 objection.shake_effect = True
                 character = default_character
                 scene_objs = list(

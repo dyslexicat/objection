@@ -92,7 +92,6 @@ def get_msg_ids(messages: List) -> set:
 # slack app mention event
 @app.event('app_mention')
 def handle_mention(event, client, ack):
-    print(event)
     ack()
     channel_id = event.get("channel")
     user_id = event.get("user")
@@ -159,7 +158,7 @@ def handle_mention(event, client, ack):
                 if msg_response["ok"] and response["status"]:
                     os.remove(f"{thread_ts}.mp4")
 
-                print(f"done generating video for {thread_ts}")
+                print(f"Generated a video by user: {user_id}, in channel: {channel_id} for the {thread_ts} thread. Link to the video: https://streamable.com/{response['shortcode']}")
             except Exception as e:
                 print(e)
 
