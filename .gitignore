@@ -1,5 +1,5 @@
 .env
-.venv
-__pycache__
-assets
+.venv/
+__pycache__/
+assets/
 db.json

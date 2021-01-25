@@ -156,7 +156,7 @@ def handle_mention(event, client, ack):
                 
                 # if everything was ok let's remove the output file
                 if msg_response["ok"] and response["status"]:
-                    os.remove(f"{thread_ts}.mp4")
+                    os.remove(f"{user_id}-{thread_ts}.mp4")
 
                 print(f"Generated a video by user: {user_id}, in channel: {channel_id} for the {thread_ts} thread. Link to the video: https://streamable.com/{response['shortcode']}")
             except Exception as e:
