@@ -38,5 +38,5 @@ textblob==0.15.3
 thinc==7.4.5
 tinydb==4.3.0
 tqdm==4.56.0
-urllib3==1.26.2
+urllib3==1.26.5
 wasabi==0.8.1
